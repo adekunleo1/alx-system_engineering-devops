@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# This script loops from 1 to 20 and:
+# - displays 4 and then `bad luck from China` for the 4th loop iteration
+# - displays 9 and then `bad luck from Japan` for the 9th loop iteration
+# - displays 17 and then `bad luck from Italy` fro the 17th loop iteration
+
+n=1
+while [[ $n -le 20 ]] 
+do
+	echo $n
+
+	case $n in
+		4)
+			echo "bad luck from China"
+		;;
+
+		9)
+			echo "bad luck from Japan"
+		;;
+
+		17)
+			echo "bad luck from Italy"
+		;;
+	esac
+	n=$((n + 1))
+done

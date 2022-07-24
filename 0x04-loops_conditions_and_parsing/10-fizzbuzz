@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# This script displas numbers from 1 to 100.
+# - displays FizzBuzz when the number if a multiple of 3 and 5
+# - displays Fizz when the number is multiple of 3
+# - displays Buzz when the number if a nultiple of 5
+# - Otherwhise, displays the number
+# - in a list format
+
+n=0
+for n in {1..100}
+do
+	mod3=$((n % 3))
+	mod5=$((n % 5))
+	text=""
+	if [[ $mod3 -eq 0 ]] || [[ $mod5 -eq 0 ]]; then
+		if [[ $mod3 -eq 0 ]]; then
+			text="Fizz"
+		fi
+
+		if [[ $mod5 -eq 0 ]]; then
+			text="${text}Buzz"
+		fi
+	else
+		text="$n"
+	fi
+	echo "$text"
+done
