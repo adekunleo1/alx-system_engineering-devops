@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# the server is the number we use ubuntu and ssh
+ssh -i ~/.ssh/school ubuntu@44.210.108.189
