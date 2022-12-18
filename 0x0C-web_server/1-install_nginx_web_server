@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
-# Tranfer a file from a client to another
+# install Nginx with init file with the message "Hello World"
 
-if [ $# -lt 4 ]
-then
-	echo "Usage: 0-tranfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
-else
-	scp -o StrictHostKeyChecking=no -i "$4" "$1" "$3@$2":~
-fi
+sudo apt-get update
+sudo apt-get -y install nginx
+echo "Hello World!" > sudo /var/www/html/index.nginx-debian.html
+sudo service nginx start
