@@ -5,7 +5,7 @@ provided a personal server by ALX. I learned how to use `scp`
 and Fabric to transfer files to my server. Additionally, I completed a basic
 configuration of the server using Nginx.
 
-The server is accessible at [bdbnb.site](http://bdbnb.site).
+The server is accessible at [adekunleo1.tech](http://adekunleo1.tech).
 
 ## Tasks :page_with_curl:
 
@@ -47,7 +47,7 @@ The server is accessible at [bdbnb.site](http://bdbnb.site).
 
 * **5. Design a beautiful 404 page**
   * A custom-designed 404 error page for my server, accessible at
-  [bdbnb.site/404](http://bdbnb.site/404).
+  [adekunleo1.tech/404](http://adekunleo1.tech/404).
 
 * **6. Deploy fast, deploy well**
   * [fabfile.py](./fabfile.py): A Python Fabric configuration file defining
