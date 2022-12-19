@@ -25,7 +25,7 @@ frontend www-http
     redirect scheme https code 301 if !{ ssl_fc }
 
 frontend www-https
-    bind   0.0.0.0:443 ssl crt /etc/haproxy/certs/www.airmiguel.tech.pem
+    bind   0.0.0.0:443 ssl crt /etc/haproxy/certs/www.adekunleo1.tech.pem
     reqadd X-Forwarded-Proto:\ https
     acl    letsencrypt-acl path_beg /.well-known/acme-challenge/
     use_backend letsencrypt-backend if letsencrypt-acl
@@ -34,8 +34,8 @@ frontend www-https
 backend www-backend
     balance  roundrobin
     redirect scheme https if !{ ssl_fc }
-    server 18112-web-01 100.26.10.43:80 check
-    server 18112-web-02 54.87.89.153:80 check
+    server 26780-web-01 100.26.10.43:80 check
+    server 26780-web-02 54.87.89.153:80 check
 
 backend letsencrypt-backend
     server letsencrypt 127.0.0.1:54321
